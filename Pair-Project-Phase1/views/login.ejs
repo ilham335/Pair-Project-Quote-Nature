@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Memanggil file Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Menambah sedikit CSS untuk tampilan */
+        body {
+            background-image: url('assets/background.jpg');
+            background-size: cover;
+            /* Untuk mengisi seluruh bagian layar dengan gambar */
+        }
+
+        .login-form {
+            width: 500px;
+            margin: auto;
+            margin-top: 15%;
+            background-color: rgb(241, 241, 241);
+            padding: 30px;
+            border-radius: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
+        footer {
+            background-color: #00000065;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00000065;">
+        <a class="navbar-brand" href="#">
+            <!-- Ganti url di bawah dengan url logo Anda -->
+            <img src="assets/logo.png" width="40" height="30" class="d-inline-block align-top" alt="">
+            Quotes
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="login-form">
+            <h2 class="text-center">Login</h2>
+            <% if (error) { %>
+             <h6 style="color: red; font-size: 20px;"><%= error %></h6>
+            <% } %>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter Username"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder="Enter Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hacktiv8 Didhy & Ilham</p>
+        </div>
+    </footer>
+
+    <!-- Memanggil file Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

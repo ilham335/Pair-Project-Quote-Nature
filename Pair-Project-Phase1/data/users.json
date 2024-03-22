@@ -1,0 +1,23 @@
+[
+    {
+        "userName":"Andi",
+        "email":"andi@gmail.com",
+        "password":"andiaja",
+        "role":"visitor",
+        "AuthorId":null
+    },
+    {
+        "userName":"Dina",
+        "email":"dina@gmail.com",
+        "password":"012333",
+        "role":"author",
+        "AuthorId":"1"
+    },
+    {
+        "userName":"doni",
+        "email":"done@company.com",
+        "password":"0202020",
+        "role":"visitor",
+        "AuthorId": null
+    }
+  ]

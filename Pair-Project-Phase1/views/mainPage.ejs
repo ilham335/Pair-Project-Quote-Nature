@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Author</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            max-width: 800px;
+            height: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .author {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .author-number {
+            flex: 0 0 50px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .author-info {
+            text-align: left;
+            font-size: 16px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            margin-right: 10px; /* Jarak antara info dan detail 
+        }
+
+        .author-details a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .author-details a:hover {
+            text-decoration: underline;
+        } */
+    </style>
+</head>
+
+<body>
+    
+    <a href="/users/<%= userId %>/loginAuthor">Login</a> ||
+    <a href="/users/<%= userId %>/registAuthor">Regist</a>
+
+    <h1>Quotes</h1>
+    <form action="/users/<%= userId %>/">
+        <input type="text" name="search">
+        <button>search</button>
+    </form>
+    <% quotes.forEach((quot, i) => { %>
+    <div class="container">
+        <h2>"<%= quot.quote %>"</h2>
+        <h4 style="font-style: italic;">-<%= quot.Author.authorName %>-</h4>
+    </div>
+    <% }) %>
+</body>
+</html>

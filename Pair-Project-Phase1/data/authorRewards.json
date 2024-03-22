@@ -1,0 +1,23 @@
+[
+    {
+      "RewardId": 1,
+      "AuthorId": 1
+    },
+    {
+      "RewardId": 1,
+      "AuthorId": 2
+    },
+    {
+      "RewardId": 2,
+      "AuthorId": 3
+    },
+    {
+      "RewardId": 3,
+      "AuthorId": 4
+    },
+    {
+      "RewardId": 3,
+      "AuthorId": 5
+    }
+  ]
+  
